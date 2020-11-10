@@ -222,7 +222,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.Panel pnlprincipal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnmin;
@@ -230,5 +229,6 @@
         protected System.Windows.Forms.Button btncursos;
         protected System.Windows.Forms.Button btnprestamo;
         protected System.Windows.Forms.Button btninscripcion;
+        protected System.Windows.Forms.Panel pnlprincipal;
     }
 }

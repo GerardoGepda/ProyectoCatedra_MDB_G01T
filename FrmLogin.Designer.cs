@@ -36,6 +36,7 @@
             this.txtcarnet = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
             this.btnclose = new System.Windows.Forms.Button();
+            this.btnprueba = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -134,12 +135,28 @@
             this.btnclose.UseVisualStyleBackColor = false;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
+            // btnprueba
+            // 
+            this.btnprueba.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.btnprueba.FlatAppearance.BorderSize = 0;
+            this.btnprueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnprueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnprueba.ForeColor = System.Drawing.Color.White;
+            this.btnprueba.Location = new System.Drawing.Point(12, 90);
+            this.btnprueba.Name = "btnprueba";
+            this.btnprueba.Size = new System.Drawing.Size(128, 42);
+            this.btnprueba.TabIndex = 16;
+            this.btnprueba.Text = "Prueba";
+            this.btnprueba.UseVisualStyleBackColor = false;
+            this.btnprueba.Click += new System.EventHandler(this.btnprueba_Click);
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(671, 462);
+            this.Controls.Add(this.btnprueba);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.txtcarnet);
@@ -167,5 +184,6 @@
         private System.Windows.Forms.TextBox txtcarnet;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Button btnclose;
+        private System.Windows.Forms.Button btnprueba;
     }
 }

@@ -45,5 +45,12 @@ namespace ProyectoCatedra_MDB_G01T
         {
             Application.Exit();
         }
+
+        private void btnprueba_Click(object sender, EventArgs e)
+        {
+            MainAdm main = new MainAdm();
+            main.Show();
+            this.Hide();
+        }
     }
 }
