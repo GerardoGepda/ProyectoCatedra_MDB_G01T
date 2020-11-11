@@ -105,7 +105,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnsalir;
-        private System.Windows.Forms.Label label1;
+        protected System.Windows.Forms.Button btnsalir;
+        protected System.Windows.Forms.Label label1;
     }
 }

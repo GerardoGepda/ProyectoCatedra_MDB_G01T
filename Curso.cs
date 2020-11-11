@@ -20,7 +20,7 @@ namespace ProyectoCatedra_MDB_G01T
         private string idCurso;
         private string nombreCurso;
         private string descripcion;
-        private string duracionSemanas;
+        private int duracionSemanas;
         private DateTime fechaInicio;
         private DateTime fechaFin;
         private string idCategoria;
@@ -29,7 +29,7 @@ namespace ProyectoCatedra_MDB_G01T
         public string IdCurso { get => idCurso; set => idCurso = value; }
         public string NombreCurso { get => nombreCurso; set => nombreCurso = value; }
         public string Descripcion { get => descripcion; set => descripcion = value; }
-        public string DuracionSemanas { get => duracionSemanas; set => duracionSemanas = value; }
+        public int DuracionSemanas { get => duracionSemanas; set => duracionSemanas = value; }
         public DateTime FechaInicio { get => fechaInicio; set => fechaInicio = value; }
         public DateTime FechaFin { get => fechaFin; set => fechaFin = value; }
         public string IdCategoria { get => idCategoria; set => idCategoria = value; }
@@ -52,7 +52,7 @@ namespace ProyectoCatedra_MDB_G01T
                         curso.IdCurso = dataReader["IDCurso"].ToString();
                         curso.NombreCurso = dataReader["NombreCurso"].ToString();
                         curso.Descripcion = dataReader["Descripcion"].ToString();
-                        curso.DuracionSemanas = dataReader["DuracionSemanas"].ToString();
+                        curso.DuracionSemanas = (int)dataReader["DuracionSemanas"];
                         curso.FechaInicio = Convert.ToDateTime(dataReader["FechaInicio"]);
                         curso.FechaFin = Convert.ToDateTime(dataReader["FechaFin"]);
                         curso.IdCategoria = dataReader["IDCategoria"].ToString();
@@ -193,7 +193,7 @@ namespace ProyectoCatedra_MDB_G01T
                 connection.Cerrar();
             }
             if (filasAfectadas != 0)
-                MessageBox.Show("El curso de borró satisfactoriamente", "¡Éxito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("El curso se borró satisfactoriamente", "¡Éxito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
                 MessageBox.Show("No se pudo borrar el registro, intente de nuevo o consulte con el administrador del sistema", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
