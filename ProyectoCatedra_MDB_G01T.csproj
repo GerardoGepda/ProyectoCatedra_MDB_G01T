@@ -64,6 +64,12 @@
     <Compile Include="FrmAddEditCurso.Designer.cs">
       <DependentUpon>FrmAddEditCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAdmCategorias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmCategorias.Designer.cs">
+      <DependentUpon>FrmAdmCategorias.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdmCurso.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddEditCurso.resx">
       <DependentUpon>FrmAddEditCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmCategorias.resx">
+      <DependentUpon>FrmAdmCategorias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdmCurso.resx">
       <DependentUpon>FrmAdmCurso.cs</DependentUpon>

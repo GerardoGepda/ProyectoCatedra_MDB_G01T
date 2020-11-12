@@ -92,7 +92,8 @@ namespace ProyectoCatedra_MDB_G01T
 
         private void btncategorias_Click(object sender, EventArgs e)
         {
-
+            FrmAdmCategorias admCategorias = new FrmAdmCategorias();
+            admCategorias.ShowDialog();
         }
 
         private void CreateCursos(Curso curso, int count, int x, int y)
