@@ -142,11 +142,11 @@
             this.btnprueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprueba.ForeColor = System.Drawing.Color.White;
-            this.btnprueba.Location = new System.Drawing.Point(12, 90);
+            this.btnprueba.Location = new System.Drawing.Point(277, 408);
             this.btnprueba.Name = "btnprueba";
             this.btnprueba.Size = new System.Drawing.Size(128, 42);
             this.btnprueba.TabIndex = 16;
-            this.btnprueba.Text = "Prueba";
+            this.btnprueba.Text = "Ingresar como maestro";
             this.btnprueba.UseVisualStyleBackColor = false;
             this.btnprueba.Click += new System.EventHandler(this.btnprueba_Click);
             // 

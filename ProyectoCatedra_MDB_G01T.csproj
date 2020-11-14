@@ -70,12 +70,6 @@
     <Compile Include="FrmAdmCategorias.Designer.cs">
       <DependentUpon>FrmAdmCategorias.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAdmCurso.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmAdmCurso.Designer.cs">
-      <DependentUpon>FrmAdmCurso.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmAdmCursos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +94,12 @@
     <Compile Include="FrmDetalles.Designer.cs">
       <DependentUpon>FrmDetalles.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGrupos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrupos.Designer.cs">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmInscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +118,9 @@
     <Compile Include="FrmPrestamo.Designer.cs">
       <DependentUpon>FrmPrestamo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Grupo.cs" />
+    <Compile Include="Horario.cs" />
+    <Compile Include="Maestro.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,9 +153,6 @@
     <EmbeddedResource Include="FrmAdmCategorias.resx">
       <DependentUpon>FrmAdmCategorias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAdmCurso.resx">
-      <DependentUpon>FrmAdmCurso.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmAdmCursos.resx">
       <DependentUpon>FrmAdmCursos.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDetalles.resx">
       <DependentUpon>FrmDetalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrupos.resx">
+      <DependentUpon>FrmGrupos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmInscripcion.resx">
       <DependentUpon>FrmInscripcion.cs</DependentUpon>

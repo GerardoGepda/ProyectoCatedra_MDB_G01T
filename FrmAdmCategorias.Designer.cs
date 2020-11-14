@@ -44,6 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtupdatenomCate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnlCrear.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.pnlActualizar.SuspendLayout();
@@ -131,9 +132,9 @@
             // dgvCategorias
             // 
             this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategorias.Location = new System.Drawing.Point(347, 170);
+            this.dgvCategorias.Location = new System.Drawing.Point(347, 177);
             this.dgvCategorias.Name = "dgvCategorias";
-            this.dgvCategorias.Size = new System.Drawing.Size(433, 150);
+            this.dgvCategorias.Size = new System.Drawing.Size(433, 143);
             this.dgvCategorias.TabIndex = 3;
             this.dgvCategorias.DoubleClick += new System.EventHandler(this.dgvCategorias_DoubleClick);
             // 
@@ -142,7 +143,7 @@
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label39.Location = new System.Drawing.Point(343, 122);
+            this.label39.Location = new System.Drawing.Point(343, 121);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(99, 24);
             this.label39.TabIndex = 16;
@@ -247,11 +248,23 @@
             this.label4.Text = "Editar categoría";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label5.Location = new System.Drawing.Point(344, 154);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(285, 15);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Doble click en la primer columna para editar datos.";
+            // 
             // FrmAdmCategorias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 440);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.pnlActualizar);
             this.Controls.Add(this.btnclose);
             this.Controls.Add(this.label39);
@@ -259,13 +272,14 @@
             this.Controls.Add(this.pnlCrear);
             this.Name = "FrmAdmCategorias";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "z";
+            this.Text = "";
             this.Load += new System.EventHandler(this.FrmAdmCategorias_Load);
             this.Controls.SetChildIndex(this.pnlCrear, 0);
             this.Controls.SetChildIndex(this.dgvCategorias, 0);
             this.Controls.SetChildIndex(this.label39, 0);
             this.Controls.SetChildIndex(this.btnclose, 0);
             this.Controls.SetChildIndex(this.pnlActualizar, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
             this.pnlCrear.ResumeLayout(false);
             this.pnlCrear.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
@@ -294,5 +308,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtupdatenomCate;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

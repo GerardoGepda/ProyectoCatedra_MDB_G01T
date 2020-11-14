@@ -32,6 +32,8 @@
             this.label39 = new System.Windows.Forms.Label();
             this.btnCrearcurso = new System.Windows.Forms.Button();
             this.btncategorias = new System.Windows.Forms.Button();
+            this.btnaddgrupo = new System.Windows.Forms.Button();
+            this.btnhorario = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel1
@@ -60,7 +62,7 @@
             this.btnCrearcurso.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrearcurso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearcurso.ForeColor = System.Drawing.Color.White;
-            this.btnCrearcurso.Location = new System.Drawing.Point(638, 15);
+            this.btnCrearcurso.Location = new System.Drawing.Point(543, 15);
             this.btnCrearcurso.Name = "btnCrearcurso";
             this.btnCrearcurso.Size = new System.Drawing.Size(128, 42);
             this.btnCrearcurso.TabIndex = 28;
@@ -75,7 +77,7 @@
             this.btncategorias.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncategorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncategorias.ForeColor = System.Drawing.Color.White;
-            this.btncategorias.Location = new System.Drawing.Point(913, 15);
+            this.btncategorias.Location = new System.Drawing.Point(681, 15);
             this.btncategorias.Name = "btncategorias";
             this.btncategorias.Size = new System.Drawing.Size(128, 42);
             this.btncategorias.TabIndex = 29;
@@ -83,12 +85,42 @@
             this.btncategorias.UseVisualStyleBackColor = false;
             this.btncategorias.Click += new System.EventHandler(this.btncategorias_Click);
             // 
+            // btnaddgrupo
+            // 
+            this.btnaddgrupo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.btnaddgrupo.FlatAppearance.BorderSize = 0;
+            this.btnaddgrupo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnaddgrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnaddgrupo.ForeColor = System.Drawing.Color.White;
+            this.btnaddgrupo.Location = new System.Drawing.Point(820, 15);
+            this.btnaddgrupo.Name = "btnaddgrupo";
+            this.btnaddgrupo.Size = new System.Drawing.Size(128, 42);
+            this.btnaddgrupo.TabIndex = 30;
+            this.btnaddgrupo.Text = "Crear grupo";
+            this.btnaddgrupo.UseVisualStyleBackColor = false;
+            // 
+            // btnhorario
+            // 
+            this.btnhorario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(240)))));
+            this.btnhorario.FlatAppearance.BorderSize = 0;
+            this.btnhorario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhorario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhorario.ForeColor = System.Drawing.Color.White;
+            this.btnhorario.Location = new System.Drawing.Point(960, 15);
+            this.btnhorario.Name = "btnhorario";
+            this.btnhorario.Size = new System.Drawing.Size(128, 42);
+            this.btnhorario.TabIndex = 31;
+            this.btnhorario.Text = "Crear horario";
+            this.btnhorario.UseVisualStyleBackColor = false;
+            // 
             // FrmAdmCursos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 572);
+            this.Controls.Add(this.btnhorario);
+            this.Controls.Add(this.btnaddgrupo);
             this.Controls.Add(this.btncategorias);
             this.Controls.Add(this.btnCrearcurso);
             this.Controls.Add(this.label39);
@@ -108,5 +140,7 @@
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Button btnCrearcurso;
         private System.Windows.Forms.Button btncategorias;
+        private System.Windows.Forms.Button btnaddgrupo;
+        private System.Windows.Forms.Button btnhorario;
     }
 }

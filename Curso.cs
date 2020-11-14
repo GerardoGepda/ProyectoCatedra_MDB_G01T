@@ -140,6 +140,42 @@ namespace ProyectoCatedra_MDB_G01T
 
         }
 
+        public static Curso ExtraerCurso(string idCurso)
+        {
+            Curso curso = new Curso();
+            string sqlSelect = "SELECT * FROM Cursos WHERE IDCurso = @idCurso";
+            try
+            {
+                connection.Conectar();
+                dataAdapter = new SqlDataAdapter(sqlSelect, connection.Conn);
+                dataAdapter.SelectCommand.Parameters.AddWithValue("@idCurso", idCurso);
+                dataReader = dataAdapter.SelectCommand.ExecuteReader();
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        curso.IdCurso = dataReader["IDCurso"].ToString();
+                        curso.NombreCurso = dataReader["NombreCurso"].ToString();
+                        curso.Descripcion = dataReader["Descripcion"].ToString();
+                        curso.DuracionSemanas = (int)dataReader["DuracionSemanas"];
+                        curso.FechaInicio = Convert.ToDateTime(dataReader["FechaInicio"]);
+                        curso.FechaFin = Convert.ToDateTime(dataReader["FechaFin"]);
+                        curso.IdCategoria = dataReader["IDCategoria"].ToString();
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error al extraer el curso de la BD: " + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+                dataReader.Close();
+            }
+            return curso;
+        }
+
         public void ActualizarCurso()
         {
             int rowsAffected = 0;

@@ -82,6 +82,14 @@ namespace ProyectoCatedra_MDB_G01T
             }
         }
 
+        private void buttongrupos_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+            FrmGrupos grupos = new FrmGrupos(btn.Tag.ToString());
+            grupos.ShowDialog();
+            Console.WriteLine(btn.Tag.ToString());
+        }
+
         private void btnCrearcurso_Click(object sender, EventArgs e)
         {
             FrmAddEditCurso frmAddCurso = new FrmAddEditCurso();
@@ -207,6 +215,8 @@ namespace ProyectoCatedra_MDB_G01T
             botonVergrupos.Size = new Size(194, 30);
             botonVergrupos.Text = "Ver grupos";
             botonVergrupos.UseVisualStyleBackColor = false;
+            botonVergrupos.Tag = curso.IdCurso;
+            botonVergrupos.Click += buttongrupos_Click;
             
             Panel panel = new Panel();
             panel.BorderStyle = BorderStyle.FixedSingle;
