@@ -64,6 +64,18 @@
     <Compile Include="FrmAddEditCurso.Designer.cs">
       <DependentUpon>FrmAddEditCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddGrupo.Designer.cs">
+      <DependentUpon>FrmAddGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddHorario.Designer.cs">
+      <DependentUpon>FrmAddHorario.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAdmCategorias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +161,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAddEditCurso.resx">
       <DependentUpon>FrmAddEditCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddGrupo.resx">
+      <DependentUpon>FrmAddGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddHorario.resx">
+      <DependentUpon>FrmAddHorario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmAdmCategorias.resx">
       <DependentUpon>FrmAdmCategorias.cs</DependentUpon>

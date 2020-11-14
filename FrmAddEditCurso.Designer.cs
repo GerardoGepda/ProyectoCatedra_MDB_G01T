@@ -57,7 +57,7 @@
             // 
             this.lbltitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lbltitulo.Location = new System.Drawing.Point(248, 96);
+            this.lbltitulo.Location = new System.Drawing.Point(234, 97);
             this.lbltitulo.Name = "lbltitulo";
             this.lbltitulo.Size = new System.Drawing.Size(379, 24);
             this.lbltitulo.TabIndex = 16;

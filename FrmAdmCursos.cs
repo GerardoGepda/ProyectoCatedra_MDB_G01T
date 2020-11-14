@@ -87,7 +87,6 @@ namespace ProyectoCatedra_MDB_G01T
             Button btn = (Button)sender;
             FrmGrupos grupos = new FrmGrupos(btn.Tag.ToString());
             grupos.ShowDialog();
-            Console.WriteLine(btn.Tag.ToString());
         }
 
         private void btnCrearcurso_Click(object sender, EventArgs e)
@@ -102,6 +101,24 @@ namespace ProyectoCatedra_MDB_G01T
         {
             FrmAdmCategorias admCategorias = new FrmAdmCategorias();
             admCategorias.ShowDialog();
+        }
+
+        private void btnaddgrupo_Click(object sender, EventArgs e)
+        {
+            FrmAddGrupo addGrupo = new FrmAddGrupo();
+            if (addGrupo.ShowDialog() == DialogResult.OK)
+            {
+                FrmAddHorario addHorario = new FrmAddHorario();
+                addHorario.fromGrupo = true;
+                addHorario.idGrupo = addGrupo.Identificador;
+                addHorario.ShowDialog();
+            }
+        }
+
+        private void btnhorario_Click(object sender, EventArgs e)
+        {
+            FrmAddHorario addHorario = new FrmAddHorario();
+            addHorario.ShowDialog();
         }
 
         private void CreateCursos(Curso curso, int count, int x, int y)
@@ -238,6 +255,5 @@ namespace ProyectoCatedra_MDB_G01T
 
             panel1.Controls.Add(panel);
         }
-
     }
 }

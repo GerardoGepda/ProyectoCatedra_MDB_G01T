@@ -330,10 +330,10 @@
             this.cbxdias.Items.AddRange(new object[] {
             "Lunes",
             "Martes",
-            "Miercoles",
+            "Miércoles",
             "Jueves",
             "Viernes",
-            "Sabado"});
+            "Sábado"});
             this.cbxdias.Location = new System.Drawing.Point(50, 117);
             this.cbxdias.Name = "cbxdias";
             this.cbxdias.Size = new System.Drawing.Size(170, 21);

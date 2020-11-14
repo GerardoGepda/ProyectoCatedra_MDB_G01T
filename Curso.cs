@@ -137,7 +137,6 @@ namespace ProyectoCatedra_MDB_G01T
                 connection.Cerrar();
                 dataReader.Close();
             }
-
         }
 
         public static Curso ExtraerCurso(string idCurso)

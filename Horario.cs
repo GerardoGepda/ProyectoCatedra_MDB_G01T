@@ -59,7 +59,7 @@ namespace ProyectoCatedra_MDB_G01T
                 }
                 else
                 {
-                    MessageBox.Show("Debe agregar horarios a este grupo para que este disponible", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"Debe agregar horarios al grupo {idGrupo} ya que no posee ninguno", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             catch (Exception err)
@@ -131,6 +131,69 @@ namespace ProyectoCatedra_MDB_G01T
             else
                 MessageBox.Show("Hubo un error al borrar datos del horario en la BD, por favor consulte con el administrador para asegurar la integridad de los datos",
                     "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public void CrearHorario()
+        {
+            int filasAfectadas = 0;
+            string sqlInsert = "INSERT INTO Horarios (IDHorario, IDGrupo, Dia, HoraInicio, HoraFin) " +
+                "VALUES (@idHorario, @idGrupo, @dia, @horaInicio, @horaFin)";
+            try
+            {
+                connection.Conectar();
+                command = new SqlCommand(sqlInsert, connection.Conn);
+                command.Parameters.AddWithValue("@idHorario", IdHorario);
+                command.Parameters.AddWithValue("@idGrupo", IdGrupo);
+                command.Parameters.AddWithValue("@dia", Dia);
+                command.Parameters.AddWithValue("@horaInicio", HoraInicio);
+                command.Parameters.AddWithValue("@horaFin", HoraFin);
+                filasAfectadas = command.ExecuteNonQuery();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error al crear un nuevo horario en la BD: " + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+            }
+            if (filasAfectadas != 0)
+                MessageBox.Show("Se creo el horario exitosamente", "¡Éxito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("No se creo el horario, consulte con el administrador", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        public void GenerarIDHorario()
+        {
+            string sqlSelect = "SELECT TOP 1 IDHorario FROM Horarios ORDER BY IDHorario DESC";
+            int code;
+            string nuevoId;
+            try
+            {
+                connection.Conectar();
+                dataAdapter = new SqlDataAdapter(sqlSelect, connection.Conn);
+                dataReader = dataAdapter.SelectCommand.ExecuteReader();
+                dataReader.Read();
+                code = Convert.ToInt32(dataReader["IDHorario"].ToString().Substring(2));
+                code++;
+                if (code < 10)
+                    nuevoId = "H00" + code.ToString();
+                else if (code < 100)
+                    nuevoId = "H0" + code.ToString();
+                else
+                    nuevoId = "H" + code.ToString();
+
+                IdHorario = nuevoId;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error en creación del ID del horario: " + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+                dataReader.Close();
+            }
         }
 
     }

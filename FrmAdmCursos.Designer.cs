@@ -98,6 +98,7 @@
             this.btnaddgrupo.TabIndex = 30;
             this.btnaddgrupo.Text = "Crear grupo";
             this.btnaddgrupo.UseVisualStyleBackColor = false;
+            this.btnaddgrupo.Click += new System.EventHandler(this.btnaddgrupo_Click);
             // 
             // btnhorario
             // 
@@ -112,6 +113,7 @@
             this.btnhorario.TabIndex = 31;
             this.btnhorario.Text = "Crear horario";
             this.btnhorario.UseVisualStyleBackColor = false;
+            this.btnhorario.Click += new System.EventHandler(this.btnhorario_Click);
             // 
             // FrmAdmCursos
             // 

@@ -160,5 +160,105 @@ namespace ProyectoCatedra_MDB_G01T
             return command.ExecuteNonQuery();
         }
 
+        public void GenerarIDGrupo()
+        {
+            string sqlSelect = "SELECT TOP 1 IDGrupo FROM Grupos ORDER BY IDGrupo DESC";
+            int code;
+            string nuevoId;
+            try
+            {
+                connection.Conectar();
+                dataAdapter = new SqlDataAdapter(sqlSelect, connection.Conn);
+                dataReader = dataAdapter.SelectCommand.ExecuteReader();
+                dataReader.Read();
+                code = Convert.ToInt32(dataReader["IDGrupo"].ToString().Substring(2));
+                code++;
+                if (code < 10)
+                    nuevoId = "G00" + code.ToString();
+                else if (code < 100)
+                    nuevoId = "G0" + code.ToString();
+                else
+                    nuevoId = "G" + code.ToString();
+
+                IdGrupo = nuevoId;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error en creación del ID del grupo: " + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+                dataReader.Close();
+            }
+        }
+
+        public void CrearGrupo()
+        {
+            int filasAfectadas = 0;
+            int filasAfectadas2 = 0;
+            string sqlInsert = "INSERT INTO Grupos (IDGrupo, Cupo, IDCurso) VALUES (@idgrupo, @cupo, @idCurso)";
+            try
+            {
+                connection.Conectar();
+                command = new SqlCommand(sqlInsert, connection.Conn);
+                command.Parameters.AddWithValue("@idgrupo", IdGrupo);
+                command.Parameters.AddWithValue("@cupo", Cupo);
+                command.Parameters.AddWithValue("@idCurso", IdCurso);
+                filasAfectadas = command.ExecuteNonQuery();
+                filasAfectadas2 = CrearDetallesGrupo();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error al crear un nuevo grupo en la BD: " + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+            }
+            if (filasAfectadas != 0 && filasAfectadas2 != 0)
+                MessageBox.Show("Se creo el grupo exitosamente", "¡Éxito!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("hubo error al crear este grupo, consulte con el administrador", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private int CrearDetallesGrupo()
+        {
+            string sqlInsert = "INSERT INTO Detalle_GruposMaestros (IDMaestro, IDGrupo) VALUES (@idMaestro, @idGrupo)";
+            command = new SqlCommand(sqlInsert, connection.Conn);
+            command.Parameters.AddWithValue("@idMaestro", idMaestro);
+            command.Parameters.AddWithValue("@idGrupo", IdGrupo);
+            return command.ExecuteNonQuery();
+        }
+
+        public static List<string> IDsGrupo()
+        {
+            List<string> ids = new List<string>();
+            string sqlSelect = "SELECT IDGrupo FROM Grupos";
+            try
+            {
+                connection.Conectar();
+                dataAdapter = new SqlDataAdapter(sqlSelect, connection.Conn);
+                dataReader = dataAdapter.SelectCommand.ExecuteReader();
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        ids.Add(dataReader["IDGrupo"].ToString());
+                    }
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error al extraer ID's de los grupos desde la BD: " + err.Message, "Error" ,MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+                dataReader.Close();
+            }
+            return ids;
+        }
+
     }
 }
