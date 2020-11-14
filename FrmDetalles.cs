@@ -12,18 +12,19 @@ namespace ProyectoCatedra_MDB_G01T
 {
     public partial class FrmDetalles : Form
     {
-        public FrmDetalles(DetallesCurso detalles)
+        //private Grupo grupo;
+
+        public FrmDetalles(Grupo grupo)
         {
             InitializeComponent();
-            lblnombre.Text = detalles.NombreCurso;
-            lbldescripcion.Text = detalles.Descripcion;
-            lblgrupo.Text = detalles.Grupo;
-            lblcupo.Text = detalles.Cupo;
-            lbldia.Text = detalles.Dia;
-            lblhorainicio.Text = detalles.Horainicio;
-            lblhorafin.Text = detalles.Horafin;
-            lblfechainicio.Text = detalles.Fechainicio.ToShortDateString();
-            lblfechafin.Text = detalles.Fechafin.ToShortDateString();
+            lblnombre.Text = grupo.CursoGrupo.NombreCurso;
+            lbldescripcion.Text = grupo.CursoGrupo.Descripcion;
+            lblgrupo.Text = grupo.IdGrupo;
+            lblcupo.Text = grupo.Cupo.ToString();
+            dgvhorarios.DataSource = grupo.Horarios;
+            dgvhorarios.Columns["IDGrupo"].Visible = false;
+            lblfechainicio.Text = grupo.CursoGrupo.FechaInicio.ToShortDateString();
+            lblfechafin.Text = grupo.CursoGrupo.FechaFin.ToShortDateString();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alumno.cs" />
-    <Compile Include="AlumnoIngresado.cs" />
     <Compile Include="Categoria.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="Curso.cs" />
@@ -145,12 +144,6 @@
     <Compile Include="MainAdm.Designer.cs">
       <DependentUpon>MainAdm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MaindAdmin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MaindAdmin.Designer.cs">
-      <DependentUpon>MaindAdmin.cs</DependentUpon>
-    </Compile>
     <Compile Include="Material.cs" />
     <Compile Include="Prestamo.cs" />
     <Compile Include="Program.cs" />
@@ -200,9 +193,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainAdm.resx">
       <DependentUpon>MainAdm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MaindAdmin.resx">
-      <DependentUpon>MaindAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

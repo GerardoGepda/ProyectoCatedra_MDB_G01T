@@ -40,6 +40,7 @@
             this.btnprestamo = new System.Windows.Forms.Button();
             this.btninscripcion = new System.Windows.Forms.Button();
             this.pnlprincipal = new System.Windows.Forms.Panel();
+            this.btncerrarsesion = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,6 +50,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(123)))), ((int)(((byte)(255)))));
+            this.panel1.Controls.Add(this.btncerrarsesion);
             this.panel1.Controls.Add(this.btnmin);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.pictureBox3);
@@ -81,7 +83,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(800, 26);
+            this.label2.Location = new System.Drawing.Point(755, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 20);
             this.label2.TabIndex = 5;
@@ -90,7 +92,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ProyectoCatedra_MDB_G01T.Properties.Resources.person_24px;
-            this.pictureBox3.Location = new System.Drawing.Point(749, 17);
+            this.pictureBox3.Location = new System.Drawing.Point(704, 17);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(35, 35);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -193,6 +195,20 @@
             this.pnlprincipal.Size = new System.Drawing.Size(1100, 572);
             this.pnlprincipal.TabIndex = 2;
             // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btncerrarsesion.FlatAppearance.BorderSize = 3;
+            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
+            this.btncerrarsesion.Location = new System.Drawing.Point(892, 18);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Size = new System.Drawing.Size(86, 31);
+            this.btncerrarsesion.TabIndex = 7;
+            this.btncerrarsesion.Text = "Cerrar sesión";
+            this.btncerrarsesion.UseVisualStyleBackColor = true;
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,5 +246,6 @@
         protected System.Windows.Forms.Button btnprestamo;
         protected System.Windows.Forms.Button btninscripcion;
         protected System.Windows.Forms.Panel pnlprincipal;
+        private System.Windows.Forms.Button btncerrarsesion;
     }
 }

@@ -31,8 +31,15 @@ namespace ProyectoCatedra_MDB_G01T
                 {
                     Main main = new Main();
                     main.alumno = alumno;
-                    main.Show();
                     this.Hide();
+                    main.ShowDialog();
+                    try
+                    {
+                        this.Show();
+                    }
+                    catch (Exception)
+                    {
+                    }
                 }
                 else
                 {
@@ -49,8 +56,9 @@ namespace ProyectoCatedra_MDB_G01T
         private void btnprueba_Click(object sender, EventArgs e)
         {
             MainAdm main = new MainAdm();
-            main.Show();
             this.Hide();
+            main.ShowDialog();
+            this.Show();
         }
     }
 }

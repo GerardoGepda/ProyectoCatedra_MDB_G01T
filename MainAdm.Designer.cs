@@ -38,15 +38,19 @@
             // btncursos
             // 
             this.btncursos.FlatAppearance.BorderSize = 0;
+            this.btncursos.Visible = false;
             // 
             // btnprestamo
             // 
             this.btnprestamo.FlatAppearance.BorderSize = 0;
+            this.btnprestamo.Visible = false;
             // 
             // btninscripcion
             // 
             this.btninscripcion.FlatAppearance.BorderSize = 0;
             this.btninscripcion.Text = "Administración de cursos";
+            this.btninscripcion.Visible = false;
+            this.btninscripcion.Click += new System.EventHandler(this.btninscripcion_Click);
             // 
             // MainAdm
             // 

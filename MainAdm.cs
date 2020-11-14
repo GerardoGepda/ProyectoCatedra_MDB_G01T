@@ -43,5 +43,9 @@ namespace ProyectoCatedra_MDB_G01T
             }
         }
 
+        public override void btninscripcion_Click(object sender, EventArgs e)
+        {
+            openForm();
+        }
     }
 }

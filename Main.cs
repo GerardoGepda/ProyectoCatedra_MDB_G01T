@@ -50,7 +50,7 @@ namespace ProyectoCatedra_MDB_G01T
         }
 
 
-        private void btninscripcion_Click(object sender, EventArgs e)
+        public virtual void btninscripcion_Click(object sender, EventArgs e)
         {
             openForm();
         }
@@ -100,6 +100,16 @@ namespace ProyectoCatedra_MDB_G01T
         private void btnmin_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            DialogResult result;
+            result = MessageBox.Show("¿Deseas cerrar sesión?", "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }
