@@ -81,6 +81,50 @@ namespace ProyectoCatedra_MDB_G01T
             return grupos;
         }
 
+        public static List<Grupo> ExtraerGrupos()
+        {
+            List<Grupo> grupos = new List<Grupo>();
+            string sqlSelect = "SELECT grp.IDGrupo, Cupo, IDCurso, IDMaestro FROM Grupos grp ";
+            sqlSelect += "INNER JOIN Detalle_GruposMaestros dgrp ";
+            sqlSelect += "ON grp.IDGrupo = dgrp.IDGrupo";
+            try
+            {
+                connection.Conectar();
+                dataAdapter = new SqlDataAdapter(sqlSelect, connection.Conn);
+                dataReader = dataAdapter.SelectCommand.ExecuteReader();
+                if (dataReader.HasRows)
+                {
+                    while (dataReader.Read())
+                    {
+                        Grupo grupo = new Grupo();
+                        grupo.IdGrupo = dataReader[0].ToString();
+                        grupo.Cupo = Convert.ToInt32(dataReader["Cupo"]);
+                        grupo.idCurso = dataReader["IDCurso"].ToString();
+                        grupo.IdMaestro = dataReader["IDMaestro"].ToString();
+                        grupo.CursoGrupo = Curso.ExtraerCurso(grupo.IdCurso);
+                        grupo.Horarios = Horario.ExtraerHorariosGrupo(grupo.IdGrupo);
+                        grupo.MaestroGrupo = Maestro.ExtraerMaestro(grupo.IdMaestro);
+                        grupos.Add(grupo);
+                        grupo = null;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Todavía no hay ningún grupo para este curso, considere agregar alguno", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Error al extraer grupos desde la BD: " + err.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                connection.Cerrar();
+                dataReader.Close();
+            }
+            return grupos;
+        }
+
         public void ActualizarGrupo()
         {
             int filasAfectadas = 0;

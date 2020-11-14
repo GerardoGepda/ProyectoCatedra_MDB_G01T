@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.btndetalles6 = new System.Windows.Forms.Button();
             this.btninscribir6 = new System.Windows.Forms.Button();
             this.lblcupo6 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -41,6 +40,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.lblnombre6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btndetalles3 = new System.Windows.Forms.Button();
             this.btninscribir3 = new System.Windows.Forms.Button();
             this.lblcupo3 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@
             this.label16 = new System.Windows.Forms.Label();
             this.lblnombre3 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btndetalles5 = new System.Windows.Forms.Button();
             this.btninscribir5 = new System.Windows.Forms.Button();
             this.lblcupo5 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.lblnombre5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btndetalles2 = new System.Windows.Forms.Button();
             this.btninscribir2 = new System.Windows.Forms.Button();
             this.lblcupo2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -68,6 +70,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.lblnombre2 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btndetalles4 = new System.Windows.Forms.Button();
             this.btninscribir4 = new System.Windows.Forms.Button();
             this.lblcupo4 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
@@ -77,6 +80,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.lblnombre4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btndetalles1 = new System.Windows.Forms.Button();
             this.btninscribir1 = new System.Windows.Forms.Button();
             this.lblcupo1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -85,13 +89,7 @@
             this.lblduracion1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblnombre1 = new System.Windows.Forms.Label();
-            this.btndetalles1 = new System.Windows.Forms.Button();
-            this.btndetalles2 = new System.Windows.Forms.Button();
-            this.btndetalles3 = new System.Windows.Forms.Button();
-            this.btndetalles4 = new System.Windows.Forms.Button();
-            this.btndetalles5 = new System.Windows.Forms.Button();
-            this.btndetalles6 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.label39 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -101,41 +99,19 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.White;
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1100, 572);
-            this.flowLayoutPanel1.TabIndex = 0;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label39);
+            this.panel1.AutoScroll = true;
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(0, 64);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1067, 557);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label39.Location = new System.Drawing.Point(40, 23);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(207, 24);
-            this.label39.TabIndex = 13;
-            this.label39.Text = "Cursos para inscripción";
+            this.panel1.Size = new System.Drawing.Size(1099, 508);
+            this.panel1.TabIndex = 1;
             // 
             // panel5
             // 
@@ -149,10 +125,23 @@
             this.panel5.Controls.Add(this.lblduracion6);
             this.panel5.Controls.Add(this.label23);
             this.panel5.Controls.Add(this.lblnombre6);
-            this.panel5.Location = new System.Drawing.Point(724, 302);
+            this.panel5.Location = new System.Drawing.Point(740, 260);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(209, 185);
             this.panel5.TabIndex = 12;
+            // 
+            // btndetalles6
+            // 
+            this.btndetalles6.BackColor = System.Drawing.Color.Gray;
+            this.btndetalles6.FlatAppearance.BorderSize = 0;
+            this.btndetalles6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalles6.ForeColor = System.Drawing.Color.White;
+            this.btndetalles6.Location = new System.Drawing.Point(118, 141);
+            this.btndetalles6.Name = "btndetalles6";
+            this.btndetalles6.Size = new System.Drawing.Size(74, 30);
+            this.btndetalles6.TabIndex = 13;
+            this.btndetalles6.Text = "Detalles";
+            this.btndetalles6.UseVisualStyleBackColor = false;
             // 
             // btninscribir6
             // 
@@ -166,7 +155,6 @@
             this.btninscribir6.TabIndex = 7;
             this.btninscribir6.Text = "Inscribir";
             this.btninscribir6.UseVisualStyleBackColor = false;
-            this.btninscribir6.Click += new System.EventHandler(this.btninscribir6_Click);
             // 
             // lblcupo6
             // 
@@ -253,10 +241,23 @@
             this.panel4.Controls.Add(this.lblduracion3);
             this.panel4.Controls.Add(this.label16);
             this.panel4.Controls.Add(this.lblnombre3);
-            this.panel4.Location = new System.Drawing.Point(724, 68);
+            this.panel4.Location = new System.Drawing.Point(740, 26);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(209, 185);
             this.panel4.TabIndex = 9;
+            // 
+            // btndetalles3
+            // 
+            this.btndetalles3.BackColor = System.Drawing.Color.Gray;
+            this.btndetalles3.FlatAppearance.BorderSize = 0;
+            this.btndetalles3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalles3.ForeColor = System.Drawing.Color.White;
+            this.btndetalles3.Location = new System.Drawing.Point(118, 140);
+            this.btndetalles3.Name = "btndetalles3";
+            this.btndetalles3.Size = new System.Drawing.Size(74, 30);
+            this.btndetalles3.TabIndex = 10;
+            this.btndetalles3.Text = "Detalles";
+            this.btndetalles3.UseVisualStyleBackColor = false;
             // 
             // btninscribir3
             // 
@@ -270,7 +271,6 @@
             this.btninscribir3.TabIndex = 7;
             this.btninscribir3.Text = "Inscribir";
             this.btninscribir3.UseVisualStyleBackColor = false;
-            this.btninscribir3.Click += new System.EventHandler(this.btninscribir3_Click);
             // 
             // lblcupo3
             // 
@@ -357,10 +357,23 @@
             this.panel6.Controls.Add(this.lblduracion5);
             this.panel6.Controls.Add(this.label30);
             this.panel6.Controls.Add(this.lblnombre5);
-            this.panel6.Location = new System.Drawing.Point(413, 301);
+            this.panel6.Location = new System.Drawing.Point(429, 259);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(209, 185);
             this.panel6.TabIndex = 11;
+            // 
+            // btndetalles5
+            // 
+            this.btndetalles5.BackColor = System.Drawing.Color.Gray;
+            this.btndetalles5.FlatAppearance.BorderSize = 0;
+            this.btndetalles5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalles5.ForeColor = System.Drawing.Color.White;
+            this.btndetalles5.Location = new System.Drawing.Point(116, 141);
+            this.btndetalles5.Name = "btndetalles5";
+            this.btndetalles5.Size = new System.Drawing.Size(74, 30);
+            this.btndetalles5.TabIndex = 12;
+            this.btndetalles5.Text = "Detalles";
+            this.btndetalles5.UseVisualStyleBackColor = false;
             // 
             // btninscribir5
             // 
@@ -374,7 +387,6 @@
             this.btninscribir5.TabIndex = 7;
             this.btninscribir5.Text = "Inscribir";
             this.btninscribir5.UseVisualStyleBackColor = false;
-            this.btninscribir5.Click += new System.EventHandler(this.btninscribir5_Click);
             // 
             // lblcupo5
             // 
@@ -461,10 +473,23 @@
             this.panel3.Controls.Add(this.lblduracion2);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.lblnombre2);
-            this.panel3.Location = new System.Drawing.Point(413, 67);
+            this.panel3.Location = new System.Drawing.Point(429, 25);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(209, 185);
             this.panel3.TabIndex = 8;
+            // 
+            // btndetalles2
+            // 
+            this.btndetalles2.BackColor = System.Drawing.Color.Gray;
+            this.btndetalles2.FlatAppearance.BorderSize = 0;
+            this.btndetalles2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalles2.ForeColor = System.Drawing.Color.White;
+            this.btndetalles2.Location = new System.Drawing.Point(116, 141);
+            this.btndetalles2.Name = "btndetalles2";
+            this.btndetalles2.Size = new System.Drawing.Size(74, 30);
+            this.btndetalles2.TabIndex = 9;
+            this.btndetalles2.Text = "Detalles";
+            this.btndetalles2.UseVisualStyleBackColor = false;
             // 
             // btninscribir2
             // 
@@ -478,7 +503,6 @@
             this.btninscribir2.TabIndex = 7;
             this.btninscribir2.Text = "Inscribir";
             this.btninscribir2.UseVisualStyleBackColor = false;
-            this.btninscribir2.Click += new System.EventHandler(this.btninscribir2_Click);
             // 
             // lblcupo2
             // 
@@ -565,10 +589,23 @@
             this.panel7.Controls.Add(this.lblduracion4);
             this.panel7.Controls.Add(this.label37);
             this.panel7.Controls.Add(this.lblnombre4);
-            this.panel7.Location = new System.Drawing.Point(101, 301);
+            this.panel7.Location = new System.Drawing.Point(117, 259);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(209, 185);
             this.panel7.TabIndex = 10;
+            // 
+            // btndetalles4
+            // 
+            this.btndetalles4.BackColor = System.Drawing.Color.Gray;
+            this.btndetalles4.FlatAppearance.BorderSize = 0;
+            this.btndetalles4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalles4.ForeColor = System.Drawing.Color.White;
+            this.btndetalles4.Location = new System.Drawing.Point(115, 141);
+            this.btndetalles4.Name = "btndetalles4";
+            this.btndetalles4.Size = new System.Drawing.Size(74, 30);
+            this.btndetalles4.TabIndex = 11;
+            this.btndetalles4.Text = "Detalles";
+            this.btndetalles4.UseVisualStyleBackColor = false;
             // 
             // btninscribir4
             // 
@@ -582,7 +619,6 @@
             this.btninscribir4.TabIndex = 7;
             this.btninscribir4.Text = "Inscribir";
             this.btninscribir4.UseVisualStyleBackColor = false;
-            this.btninscribir4.Click += new System.EventHandler(this.btninscribir4_Click);
             // 
             // lblcupo4
             // 
@@ -669,10 +705,23 @@
             this.panel2.Controls.Add(this.lblduracion1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblnombre1);
-            this.panel2.Location = new System.Drawing.Point(101, 67);
+            this.panel2.Location = new System.Drawing.Point(117, 25);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(209, 185);
             this.panel2.TabIndex = 0;
+            // 
+            // btndetalles1
+            // 
+            this.btndetalles1.BackColor = System.Drawing.Color.Gray;
+            this.btndetalles1.FlatAppearance.BorderSize = 0;
+            this.btndetalles1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndetalles1.ForeColor = System.Drawing.Color.White;
+            this.btndetalles1.Location = new System.Drawing.Point(115, 141);
+            this.btndetalles1.Name = "btndetalles1";
+            this.btndetalles1.Size = new System.Drawing.Size(74, 30);
+            this.btndetalles1.TabIndex = 8;
+            this.btndetalles1.Text = "Detalles";
+            this.btndetalles1.UseVisualStyleBackColor = false;
             // 
             // btninscribir1
             // 
@@ -686,7 +735,6 @@
             this.btninscribir1.TabIndex = 7;
             this.btninscribir1.Text = "Inscribir";
             this.btninscribir1.UseVisualStyleBackColor = false;
-            this.btninscribir1.Click += new System.EventHandler(this.btninscribir1_Click);
             // 
             // lblcupo1
             // 
@@ -761,102 +809,29 @@
             this.lblnombre1.Text = "Vacío";
             this.lblnombre1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btndetalles1
+            // label39
             // 
-            this.btndetalles1.BackColor = System.Drawing.Color.Gray;
-            this.btndetalles1.FlatAppearance.BorderSize = 0;
-            this.btndetalles1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalles1.ForeColor = System.Drawing.Color.White;
-            this.btndetalles1.Location = new System.Drawing.Point(115, 141);
-            this.btndetalles1.Name = "btndetalles1";
-            this.btndetalles1.Size = new System.Drawing.Size(74, 30);
-            this.btndetalles1.TabIndex = 8;
-            this.btndetalles1.Text = "Detalles";
-            this.btndetalles1.UseVisualStyleBackColor = false;
-            this.btndetalles1.Click += new System.EventHandler(this.btndetalles1_Click);
-            // 
-            // btndetalles2
-            // 
-            this.btndetalles2.BackColor = System.Drawing.Color.Gray;
-            this.btndetalles2.FlatAppearance.BorderSize = 0;
-            this.btndetalles2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalles2.ForeColor = System.Drawing.Color.White;
-            this.btndetalles2.Location = new System.Drawing.Point(116, 141);
-            this.btndetalles2.Name = "btndetalles2";
-            this.btndetalles2.Size = new System.Drawing.Size(74, 30);
-            this.btndetalles2.TabIndex = 9;
-            this.btndetalles2.Text = "Detalles";
-            this.btndetalles2.UseVisualStyleBackColor = false;
-            this.btndetalles2.Click += new System.EventHandler(this.btndetalles2_Click);
-            // 
-            // btndetalles3
-            // 
-            this.btndetalles3.BackColor = System.Drawing.Color.Gray;
-            this.btndetalles3.FlatAppearance.BorderSize = 0;
-            this.btndetalles3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalles3.ForeColor = System.Drawing.Color.White;
-            this.btndetalles3.Location = new System.Drawing.Point(118, 140);
-            this.btndetalles3.Name = "btndetalles3";
-            this.btndetalles3.Size = new System.Drawing.Size(74, 30);
-            this.btndetalles3.TabIndex = 10;
-            this.btndetalles3.Text = "Detalles";
-            this.btndetalles3.UseVisualStyleBackColor = false;
-            this.btndetalles3.Click += new System.EventHandler(this.btndetalles3_Click);
-            // 
-            // btndetalles4
-            // 
-            this.btndetalles4.BackColor = System.Drawing.Color.Gray;
-            this.btndetalles4.FlatAppearance.BorderSize = 0;
-            this.btndetalles4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalles4.ForeColor = System.Drawing.Color.White;
-            this.btndetalles4.Location = new System.Drawing.Point(115, 141);
-            this.btndetalles4.Name = "btndetalles4";
-            this.btndetalles4.Size = new System.Drawing.Size(74, 30);
-            this.btndetalles4.TabIndex = 11;
-            this.btndetalles4.Text = "Detalles";
-            this.btndetalles4.UseVisualStyleBackColor = false;
-            this.btndetalles4.Click += new System.EventHandler(this.btndetalles4_Click);
-            // 
-            // btndetalles5
-            // 
-            this.btndetalles5.BackColor = System.Drawing.Color.Gray;
-            this.btndetalles5.FlatAppearance.BorderSize = 0;
-            this.btndetalles5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalles5.ForeColor = System.Drawing.Color.White;
-            this.btndetalles5.Location = new System.Drawing.Point(116, 141);
-            this.btndetalles5.Name = "btndetalles5";
-            this.btndetalles5.Size = new System.Drawing.Size(74, 30);
-            this.btndetalles5.TabIndex = 12;
-            this.btndetalles5.Text = "Detalles";
-            this.btndetalles5.UseVisualStyleBackColor = false;
-            this.btndetalles5.Click += new System.EventHandler(this.btndetalles5_Click);
-            // 
-            // btndetalles6
-            // 
-            this.btndetalles6.BackColor = System.Drawing.Color.Gray;
-            this.btndetalles6.FlatAppearance.BorderSize = 0;
-            this.btndetalles6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndetalles6.ForeColor = System.Drawing.Color.White;
-            this.btndetalles6.Location = new System.Drawing.Point(118, 141);
-            this.btndetalles6.Name = "btndetalles6";
-            this.btndetalles6.Size = new System.Drawing.Size(74, 30);
-            this.btndetalles6.TabIndex = 13;
-            this.btndetalles6.Text = "Detalles";
-            this.btndetalles6.UseVisualStyleBackColor = false;
-            this.btndetalles6.Click += new System.EventHandler(this.btndetalles6_Click);
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label39.Location = new System.Drawing.Point(40, 23);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(207, 24);
+            this.label39.TabIndex = 14;
+            this.label39.Text = "Cursos para inscripción";
             // 
             // FrmInscripcion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 572);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmInscripcion";
             this.Text = "FrmInscripcion";
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.FrmInscripcion_Load);
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -870,24 +845,15 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label lblcupo1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblgrupo1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label lblduracion1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblnombre1;
-        private System.Windows.Forms.Button btninscribir1;
-        private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btndetalles6;
         private System.Windows.Forms.Button btninscribir6;
         private System.Windows.Forms.Label lblcupo6;
         private System.Windows.Forms.Label label19;
@@ -897,6 +863,7 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label lblnombre6;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btndetalles3;
         private System.Windows.Forms.Button btninscribir3;
         private System.Windows.Forms.Label lblcupo3;
         private System.Windows.Forms.Label label12;
@@ -906,6 +873,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lblnombre3;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button btndetalles5;
         private System.Windows.Forms.Button btninscribir5;
         private System.Windows.Forms.Label lblcupo5;
         private System.Windows.Forms.Label label26;
@@ -915,6 +883,7 @@
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label lblnombre5;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btndetalles2;
         private System.Windows.Forms.Button btninscribir2;
         private System.Windows.Forms.Label lblcupo2;
         private System.Windows.Forms.Label label3;
@@ -924,6 +893,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblnombre2;
         private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btndetalles4;
         private System.Windows.Forms.Button btninscribir4;
         private System.Windows.Forms.Label lblcupo4;
         private System.Windows.Forms.Label label33;
@@ -932,11 +902,16 @@
         private System.Windows.Forms.Label lblduracion4;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label lblnombre4;
+        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btndetalles1;
-        private System.Windows.Forms.Button btndetalles6;
-        private System.Windows.Forms.Button btndetalles3;
-        private System.Windows.Forms.Button btndetalles5;
-        private System.Windows.Forms.Button btndetalles2;
-        private System.Windows.Forms.Button btndetalles4;
+        private System.Windows.Forms.Button btninscribir1;
+        private System.Windows.Forms.Label lblcupo1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblgrupo1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblduracion1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblnombre1;
+        private System.Windows.Forms.Label label39;
     }
 }
