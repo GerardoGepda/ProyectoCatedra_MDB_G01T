@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btncerrarsesion = new System.Windows.Forms.Button();
             this.btnmin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.btnprestamo = new System.Windows.Forms.Button();
             this.btninscripcion = new System.Windows.Forms.Button();
             this.pnlprincipal = new System.Windows.Forms.Panel();
-            this.btncerrarsesion = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -61,6 +61,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1100, 66);
             this.panel1.TabIndex = 0;
+            // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btncerrarsesion.FlatAppearance.BorderSize = 3;
+            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
+            this.btncerrarsesion.Location = new System.Drawing.Point(892, 18);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Size = new System.Drawing.Size(86, 31);
+            this.btncerrarsesion.TabIndex = 7;
+            this.btncerrarsesion.Text = "Cerrar sesión";
+            this.btncerrarsesion.UseVisualStyleBackColor = true;
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
             // 
             // btnmin
             // 
@@ -170,7 +184,7 @@
             this.btnprestamo.Name = "btnprestamo";
             this.btnprestamo.Size = new System.Drawing.Size(201, 57);
             this.btnprestamo.TabIndex = 3;
-            this.btnprestamo.Text = "Prestamo de equipo";
+            this.btnprestamo.Text = "Préstamo de equipo";
             this.btnprestamo.UseVisualStyleBackColor = true;
             this.btnprestamo.Click += new System.EventHandler(this.btnprestamo_Click);
             // 
@@ -194,20 +208,6 @@
             this.pnlprincipal.Name = "pnlprincipal";
             this.pnlprincipal.Size = new System.Drawing.Size(1100, 572);
             this.pnlprincipal.TabIndex = 2;
-            // 
-            // btncerrarsesion
-            // 
-            this.btncerrarsesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btncerrarsesion.FlatAppearance.BorderSize = 3;
-            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
-            this.btncerrarsesion.Location = new System.Drawing.Point(892, 18);
-            this.btncerrarsesion.Name = "btncerrarsesion";
-            this.btncerrarsesion.Size = new System.Drawing.Size(86, 31);
-            this.btncerrarsesion.TabIndex = 7;
-            this.btncerrarsesion.Text = "Cerrar sesión";
-            this.btncerrarsesion.UseVisualStyleBackColor = true;
-            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
             // 
             // Main
             // 

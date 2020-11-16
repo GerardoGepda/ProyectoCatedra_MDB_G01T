@@ -54,7 +54,7 @@
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(284, 24);
             this.label39.TabIndex = 14;
-            this.label39.Text = "Prestamo de equipo y materiales";
+            this.label39.Text = "Préstamo de equipo y materiales";
             // 
             // panel1
             // 
@@ -97,7 +97,7 @@
             this.btnprestar.Name = "btnprestar";
             this.btnprestar.Size = new System.Drawing.Size(118, 35);
             this.btnprestar.TabIndex = 18;
-            this.btnprestar.Text = "Realizar prestamo";
+            this.btnprestar.Text = "Realizar préstamo";
             this.btnprestar.UseVisualStyleBackColor = false;
             this.btnprestar.Click += new System.EventHandler(this.btnprestar_Click);
             // 
@@ -142,7 +142,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(307, 72);
             this.label3.TabIndex = 22;
-            this.label3.Text = "• Solo puede tener un prestamo a la vez.\r\n• Su prestamo solo dura 2 días, procure" +
+            this.label3.Text = "• Solo puede tener un préstamo a la vez.\r\n• Su préstamo solo dura 2 días, procure" +
     " devolver\r\n   el objeto prestado a tiempo.";
             // 
             // dgvPrestamos
@@ -164,7 +164,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(292, 20);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Hacer un prestamo de equipo o material";
+            this.label4.Text = "Hacer un préstamo de equipo o material";
             // 
             // label5
             // 
@@ -174,7 +174,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 20);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Registro de prestamos";
+            this.label5.Text = "Registro de préstamos";
             // 
             // label6
             // 

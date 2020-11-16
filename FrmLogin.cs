@@ -41,10 +41,6 @@ namespace ProyectoCatedra_MDB_G01T
                     {
                     }
                 }
-                else
-                {
-                    Console.WriteLine("fallo");
-                }
             }
         }
 
@@ -58,7 +54,13 @@ namespace ProyectoCatedra_MDB_G01T
             MainAdm main = new MainAdm();
             this.Hide();
             main.ShowDialog();
-            this.Show();
+            try
+            {
+                this.Show();
+            }
+            catch (Exception)
+            {
+            }
         }
     }
 }

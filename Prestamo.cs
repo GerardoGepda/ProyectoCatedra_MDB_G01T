@@ -79,7 +79,7 @@ namespace ProyectoCatedra_MDB_G01T
                 connection.Conectar();
                 command = new SqlCommand(sqlInsert, connection.Conn);
                 command.Parameters.AddWithValue("@idprestamo", IdPrestamo);
-                command.Parameters.AddWithValue("@devolucion", FechaDevolución);
+                command.Parameters.AddWithValue("@devolucion", Convert.ToDateTime(FechaDevolución));
                 command.Parameters.AddWithValue("@idmaterial", IdMaterial);
                 filasAfectadas1 = command.ExecuteNonQuery();
                 filasAfectadas2 = guardarDetallePrestamo(IdPrestamo);

@@ -81,7 +81,7 @@
             this.btningresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btningresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btningresar.ForeColor = System.Drawing.Color.White;
-            this.btningresar.Location = new System.Drawing.Point(156, 348);
+            this.btningresar.Location = new System.Drawing.Point(156, 318);
             this.btningresar.Name = "btningresar";
             this.btningresar.Size = new System.Drawing.Size(128, 42);
             this.btningresar.TabIndex = 8;
@@ -127,7 +127,7 @@
             this.btnclose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnclose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnclose.ForeColor = System.Drawing.Color.White;
-            this.btnclose.Location = new System.Drawing.Point(382, 348);
+            this.btnclose.Location = new System.Drawing.Point(382, 318);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(128, 42);
             this.btnclose.TabIndex = 15;
@@ -142,7 +142,7 @@
             this.btnprueba.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnprueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnprueba.ForeColor = System.Drawing.Color.White;
-            this.btnprueba.Location = new System.Drawing.Point(277, 408);
+            this.btnprueba.Location = new System.Drawing.Point(277, 390);
             this.btnprueba.Name = "btnprueba";
             this.btnprueba.Size = new System.Drawing.Size(128, 42);
             this.btnprueba.TabIndex = 16;
