@@ -41,6 +41,10 @@ namespace ProyectoCatedra_MDB_G01T
                     {
                     }
                 }
+                else
+                {
+                    MessageBox.Show("El carnet ingresado no existe", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
 
