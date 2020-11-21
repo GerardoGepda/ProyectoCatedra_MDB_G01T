@@ -14,7 +14,6 @@ namespace ProyectoCatedra_MDB_G01T
     {
         //Elementos para conexión y queries
         private static Connection connection = new Connection();
-        private SqlCommand command;
         private static SqlDataAdapter dataAdapter;
         private static SqlDataReader dataReader;
 

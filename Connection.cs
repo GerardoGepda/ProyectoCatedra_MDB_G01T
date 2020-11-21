@@ -10,7 +10,7 @@ namespace ProyectoCatedra_MDB_G01T
 {
     public class Connection
     {
-        private static string cadcon = "server=Localhost\\SQLEXPRESS; database=BD_ProyectoMDB; Integrated Security=yes";
+        private static string cadcon = "Data Source=Localhost\\SQLEXPRESS; Initial Catalog=BD_ProyectoMDB; User ID=ProyectCatMDB_User; Password=123456";
         private SqlConnection conn = new SqlConnection(cadcon);
 
         public SqlConnection Conn { get => conn; }

@@ -21,7 +21,6 @@ namespace ProyectoCatedra_MDB_G01T
         }
 
         Connection connection = new Connection();
-        SqlDataReader dataReader;
         SqlDataAdapter dataAdapter;
         DataSet datos;
         SqlCommand command;

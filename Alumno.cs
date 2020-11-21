@@ -15,7 +15,6 @@ namespace ProyectoCatedra_MDB_G01T
         Connection connection = new Connection();
         SqlDataReader dataReader;
         SqlDataAdapter dataAdapter;
-        SqlCommand command;
 
         //campos o variables
         private string idAlumno;
